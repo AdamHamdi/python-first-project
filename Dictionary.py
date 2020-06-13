@@ -12,5 +12,8 @@ def main():
     #delete value
     del Student["Dept"]
     print(Student)
+    #delete the entiry Student
+    Student.clear()
+    print(Student)
 
 if __name__=='__main__':main()
