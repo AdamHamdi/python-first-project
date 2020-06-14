@@ -1,20 +1,25 @@
 
 class Car:
-    def __init__(self):
-        print('Create class constructor')
-    def SetOwner(self,Name):
-        self._Name=Name
+    def __init__(self,**kwargs):
+        self.Data=kwargs
     def GetOwner(self):
-        print('Owner is ',self._Name)
+        print('Owner is ',self.Data["Name"])
+        print('Car Model ', self.Data["Model"])
+        print('year ', self.Data["Year"])
+    def Set_Model(self,Model):
+        self.Data['Model']=Model
+    def Get_Model(self):
+        print('Car Model ', self.Data["Model"])
 
 
 def main():
-    mycar=Car()
-    mycar.SetOwner("Adam Hamdi")
+    mycar=Car(Name="Adam Hamdi",Model="Camer 2015",Year=2020)
     mycar.GetOwner()
-    Gabbycar = Car()
-    Gabbycar.SetOwner("Gabriella Daniel")
+    Gabbycar = Car(Name="Gabriella Daniel",Model="GMC" ,Year=2019)
     Gabbycar.GetOwner()
+    #Adam set car_Model
+    Gabbycar.Set_Model("Ford Fusion")
+    Gabbycar.Get_Model()
 
 
 
