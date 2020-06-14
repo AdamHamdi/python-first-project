@@ -7,7 +7,8 @@ def main():
             print(line)
         readfile.close()
     except IOError:
-        print('file empty')
-    print('operation next')
+        print('file not found')
+    else:
+      print('operation next')
 if __name__=='__main__':main()
 #appele de la fonction main de cette façon
