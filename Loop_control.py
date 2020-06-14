@@ -6,7 +6,9 @@ def main():
         #print (letter)
         if(letter=='t'):
             #break leave directly
-            continue # continue without printing the letter 't'
+            #pass passed this statement 
+            #print ('block is passed')
+            continue # continue without printing the letter 't'anything
         print(letter)
 
 
