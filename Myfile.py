@@ -1,7 +1,13 @@
 def main():
-    #def structre de la function
-    print("welcome to python")
-    print("next line to execute")
+    #creation d'un fichier
+    out=open("text.txt","a")#w=write r=read (a=append=ajouter)
+    out.write("\n name:Adam Hamdi")#ecrire dans le fichier
+    #out.write("\n name:dani")
+    out.close#fereture d'un fichier
+    readfile=open("text.txt","r")
+    for line in readfile:
+        print(line)
+    readfile.close()
 if __name__=='__main__':main()
 #appele de la fonction main de cette façon
 
