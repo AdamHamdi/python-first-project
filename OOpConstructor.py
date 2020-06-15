@@ -1,7 +1,8 @@
 
 class Car:
     def __init__(self,**kwargs):
-        self.Data=kwargs
+        #constructor sera declancher avec toute instance créé
+        self.Data=kwargs#lecture de kwargs
     def GetOwner(self):
         print('Owner is ',self.Data["Name"])
         print('Car Model ', self.Data["Model"])
