@@ -6,6 +6,7 @@ def main():
     db.execute("insert into Admin(name,age)values(?,?)",('Adam',28 ))
     db.execute("insert into Admin(name,age)values(?,?)", ('Gabby', 19))
     db.execute("insert into Admin(name,age)values(?,?)", ('Gabbriella', 19))
+    db.execute("insert into Admin(name,age)values(?,?)", ('Dani', 19))
     #db.commit() tronsaction refaire les requetes
 
     cursor=db.execute("select * from Admin")
